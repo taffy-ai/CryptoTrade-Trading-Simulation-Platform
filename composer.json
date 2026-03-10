@@ -1,0 +1,7 @@
+{
+    "require": {
+        "stripe/stripe-php": "^16.6",
+        "phpgangsta/googleauthenticator": "dev-master",
+        "dompdf/dompdf": "^3.1"
+    }
+}

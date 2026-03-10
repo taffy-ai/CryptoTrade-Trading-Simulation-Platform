@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    background-color: #0b0e11;
+    color: #eaecef;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    opacity: 0;
+    animation: fadeInBody 1s ease forwards;
+}
+
+@keyframes fadeInBody {
+    to { opacity: 1; }
+}
+
+.login-card {
+    background-color: #1e2329;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 0.8s ease;
+}
+
+.login-card form {
+    width: 100%;
+}
+
+.login-card .text-danger {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background-color: #2b3139;
+    border: none;
+    color: #eaecef;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #2b3139;
+    color: #eaecef;
+    box-shadow: 0 0 8px rgba(252, 213, 53, 0.4);
+}
+
+.btn-primary {
+    background-color: #fcd535;
+    color: #0b0e11;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f0b90b;
+    box-shadow: 0 0 12px rgba(252, 213, 53, 0.5);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+    box-shadow: 0 0 12px rgba(220, 53, 69, 0.5);
+}
+
+.btn-success {
+    background-color: #198754;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    box-shadow: 0 0 12px rgba(25, 135, 84, 0.5);
+}
+
+.btn-warning {
+    background-color: #fcd535;
+    color: #0b0e11;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #f0b90b;
+    box-shadow: 0 0 12px rgba(252, 213, 53, 0.5);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5c636a;
+    box-shadow: 0 0 12px rgba(108, 117, 125, 0.5);
+}
+
+.form-text {
+    color: #fcd535;
+}
+
+a {
+    color: #fcd535;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f0b90b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #eaecef;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    color: #fcd535;
+    transform: scale(1.02);
+}
+
+.login-card p,
+.login-card label {
+    color: #eaecef !important;
+    font-weight: 500;
+}
+
+.text-danger {
+    color: #ff4d4f !important;
+    font-weight: bold;
+}
+
+#buy-crypto-price,
+#sell-crypto-price,
+#alert-crypto-price,
+#stop-loss-current-price {
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.5s ease;
+}
+
+.crypto-chart-container {
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    background-color: #1e2329;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(252, 213, 53, 0.2);
+    animation: fadeInUp 1s ease;
+}
+
+.crypto-chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+form, .crypto-chart-container {
+    background-color: #1e2329;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.9s ease;
+}
+
+.table-dark tbody tr.table-success {
+    background-color: #141e26;
+    color: #f0b90b;
+    font-weight: bold;
+    border-top: 2px solid #f0b90b;
+    border-bottom: 2px solid #f0b90b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#total-portfolio-usd {
+    color: #f0b90b;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.table-dark tbody tr.table-success:hover {
+    background-color: #1e2329;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+/* Effets de survol et animations pour le menu de navigation */
+
+nav .btn {
+    border: none;
+    font-weight: bold;
+    opacity: 0.8;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    animation: fadeInMenu 0.6s ease;
+}
+
+nav .btn:hover {
+    opacity: 1;
+    color: #0b0e11;
+    background-color: #fcd535;
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px rgba(252, 213, 53, 0.5);
+    text-decoration: none;
+}
+
+nav .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+/* Animation générale des sections */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation titre principal */
+
+h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+    animation: fadeInTitle 1.2s ease both;
+    color: #fcd535;
+    text-shadow: 0 0 10px rgba(252, 213, 53, 0.7);
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    color: #f0b90b;
+    text-shadow: 0 0 15px rgba(252, 213, 53, 0.9);
+}
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05) translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Inputs : background gris pâle et placeholder très pâle */
+.form-control {
+    background-color: #3a3f46;
+    border: 1px solid #4a4f57;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+}
+
+.form-control::placeholder {
+    color: #d1d5db;
+    opacity: 0.7;
+}
+
+.form-control:focus::placeholder {
+    color: #f0f0f0;
+    opacity: 0.9;
+}
+
+.form-control:focus {
+    background-color: #484e56;
+    color: #ffffff;
+    border-color: #fcd535;
+    box-shadow: 0 0 10px rgba(252, 213, 53, 0.5);
+}
+
+.form-control:hover {
+    background-color: #484e56;
+    border-color: #fcd535;
+}
+
+/* Select : harmonisé même fond gris pâle */
+.form-select {
+    background-color: #3a3f46;
+    border: 1px solid #4a4f57;
+    color: #ffffff;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 16 16' fill='%23fcd535' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.204 5.112a.5.5 0 01.683-.183l.07.057L8 8.293l4.043-3.307a.5.5 0 01.765.638l-.057.07-4.5 3.678a.5.5 0 01-.638.057l-.07-.057-4.5-3.678a.5.5 0 01-.057-.638l.057-.07z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+
+.form-select:hover {
+    background-color: #484e56;
+    border-color: #fcd535;
+}
+
+.form-select:focus {
+    background-color: #484e56;
+    border-color: #fcd535;
+    box-shadow: 0 0 10px rgba(252, 213, 53, 0.5);
+    color: #ffffff;
+    outline: none;
+}
+
+.form-select option {
+    background-color: #3a3f46;
+    color: #ffffff;
+}
+
+.login-card h1 {
+    font-size: 1.6rem;
+    text-shadow: 0 0 8px rgba(252, 213, 53, 0.7);
+    color: #fcd535;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    animation: fadeInTitle 1.2s ease both;
+}
+
+.login-card h1:hover {
+    transform: scale(1.03);
+    color: #f0b90b;
+    text-shadow: 0 0 12px rgba(252, 213, 53, 0.9);
+}
+
+.current-balance {
+    color: #ffffff;
+}
+
+.login-card {
+    padding: 40px 30px;
+}
